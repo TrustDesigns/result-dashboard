@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Result Dashboard</title>
+  <link rel="stylesheet" href="results.css" />
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">SPIK</div>
+      <ul class="menu">
+        <li class="active">🏠 Home</li>
+        <li>👩‍🎓 Students</li>
+        <li>👨‍🏫 Teachers</li>
+        <li>📚 Library</li>
+        <li>🧾 Account</li>
+        <li>🏫 Class</li>
+        <li>📖 Subject</li>
+        <li>🕒 Routine</li>
+        <li>📊 Attendance</li>
+        <li>🧮 Exam</li>
+        <li>📢 Notice</li>
+        <li>🚌 Transport</li>
+        <li>🏠 Hostel</li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+
+      <!-- Topbar -->
+      <div class="topbar">
+        <input type="text" placeholder="What do you want to find?" class="search-box" />
+        <div class="user-info">
+          <img src="alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="Profile" class="user-pic" />
+          <span>Priscilla Lily <small>Admin</small></span>
+        </div>
+      </div>
+
+      <!-- Student Info Section -->
+      <section class="student-section">
+        <div class="student-card">
+          <img src="alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="Student" class="student-pic" />
+          <div>
+            <h2>Jessia Rose</h2>
+            <p>🇦🇺 Australia, House10</p>
+            <p>Aliquam erat volutpat. Curabitur natis massa sedde lacus.</p>
+          </div>
+          <button class="view-btn">View Full Profile</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat-box">
+            <h3>12</h3>
+            <h2>This Month</h2>
+            <h4>Notification</h4>
+            <p> your School activities are stored in please check it</p>
+          </div>
+          <div class="stat-box">
+            <h3>16</h3>
+            <h2>Arranged</h2>
+            <h4>Events</h4>
+            <p> your School has arranged many events</p>
+          </div>
+          <div class="stat-box">
+            <h3>95%</h3>
+            <h2>Monthly</h2>
+            <h4>Attendance</h4>
+            <p> Here is your attendance ratio for this month</p>
+          </div>
+          <div class="chart-box">
+            <h4>Attendance</h4>
+            <div class="donut-chart">
+              <div class="circle"></div>
+              <div class="chart-center">70%</div>
+            </div>
+            <div class="legend">
+              <div><span class="dot purple"></span>Present 70%</div>
+              <div><span class="dot orange"></span>Absent 30%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exam Results Table -->
+      <section class="results-section">
+        <div class="results-header">
+          <h3>All Exam Results</h3>
+          <input type="text" placeholder="Search by name or roll" />
+        </div>
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Exam Name</th>
+              <th>Student ID</th>
+              <th>Class</th>
+              <th>Subject</th>
+              <th>Grade</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Class Test</td>
+              <td>PRE43178</td>
+              <td>9-10</td>
+              <td>English</td>
+              <td>A+</td>
+              <td>22/2/19</td>
+              <td class="actions">✏️ 🗑️</td>
+            </tr>
+            <tr class="highlight">
+              <td><input type="checkbox" checked></td>
+              <td>Class Test</td>
+              <td>PRE43178</td>
+              <td>9-10</td>
+              <td>Chemistry</td>
+              <td>A+</td>
+              <td>22/2/19</td>
+              <td class="actions">✏️ 🗑️</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Class Test</td>
+              <td>PRE43178</td>
+              <td>9-10</td>
+              <td>Biology</td>
+              <td>A+</td>
+              <td>22/2/19</td>
+              <td class="actions">✏️ 🗑️</td>
+            </tr>
+            <tr class="highlight">
+              <td><input type="checkbox" checked></td>
+              <td>Fast Semester</td>
+              <td>PRE43178</td>
+              <td>9-10</td>
+              <td>English</td>
+              <td>A+</td>
+              <td>22/2/19</td>
+              <td class="actions">✏️ 🗑️</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>Class Test</td>
+              <td>PRE43178</td>
+              <td>9-10</td>
+              <td>Physics</td>
+              <td>A+</td>
+              <td>22/2/19</td>
+              <td class="actions">✏️ 🗑️</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
